@@ -1,9 +1,3 @@
-import React from 'react'
+import MessageView from './components/MessageView'
 
-const Message = () => (
-    <div>
-        New message comes here
-    </div>
-)
-
-export default Message
+export default MessageView

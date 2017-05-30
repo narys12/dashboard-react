@@ -1,9 +1,3 @@
-import React from 'react'
+import NotifocationsView from './components/NotificationsView'
 
-const Notifocations = () => (
-    <div>
-        Notifications are here
-    </div>
-)
-
-export default Notifocations
+export default NotifocationsView
