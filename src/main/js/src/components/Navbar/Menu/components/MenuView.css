@@ -1,13 +1,11 @@
-.badge-notify{
-   background:blue;
-   position:relative;
-   top: -15px;
-   left: -10px;
-   font-size: 6px;
-   font-weight: bold;
-   color: #ffffff;
+.dash-badge {
+  color: red;
 }
 
-.badge-success {
-  background-color: #468847;
+.badge-notify{
+   position:relative;
+   top: -13px;
+   left: -7px;
+   font-size: 6px;
+   font-weight: bold;
 }

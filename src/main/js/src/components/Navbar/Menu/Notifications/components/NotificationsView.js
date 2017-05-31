@@ -1,10 +1,11 @@
 import React from 'react'
+import './NotificationsView.css'
 
 const NotificationsView = () => (
     <li>
         <a href="#">
-            <i className="fa fa-bell fa-lg" aria-hidden="true"></i>
-            <span className="badge badge-notify badge-warning">3</span>
+            <i className="fa fa-bell"></i>
+            <span className="label label-warning badge-notify">3</span>
         </a>
     </li>
 )

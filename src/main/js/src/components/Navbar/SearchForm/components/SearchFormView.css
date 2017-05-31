@@ -1,0 +1,10 @@
+input[type=text] {
+    width: 100px;
+    font-weight: bold;
+    -webkit-transition: width 2s; /* Safari */
+    transition: all 0.3s ease 0s;
+}
+
+input[type=text]:focus {
+    width: 300px;
+}
