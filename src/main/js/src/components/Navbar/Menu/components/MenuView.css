@@ -1,11 +1,11 @@
 .badge-notify{
-   background:red;
+   background:blue;
    position:relative;
-   top: -20px;
+   top: -15px;
    left: -10px;
    font-size: 6px;
-  font-weight: bold;
-  color: #ffffff;
+   font-weight: bold;
+   color: #ffffff;
 }
 
 .badge-success {

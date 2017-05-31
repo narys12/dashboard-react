@@ -6,10 +6,9 @@ import './MenuView.css'
 
 const MenuView = () => (
     <ul className="nav navbar-nav navbar-right">
-        <li><Messsage /></li>
-        <li><Notifications /></li>
+        <Messsage/>
+        <Notifications/>
     </ul>
-    
 )
 
 export default MenuView
