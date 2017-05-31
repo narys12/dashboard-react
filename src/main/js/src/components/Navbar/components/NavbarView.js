@@ -4,8 +4,10 @@ import Menu from '../Menu'
 
 const NavbarView = () => (
     <nav className="navbar navbar-default">
-        <Searchform />
-        <Menu />
+        <div className="container-fluid">
+            <Searchform />
+            <Menu />
+        </div>
     </nav>
 )
 

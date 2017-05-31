@@ -1263,6 +1263,10 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
+classnames@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
+
 clean-css@4.1.x:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.3.tgz#07cfe8980edb20d455ddc23aadcf1e04c6e509ce"
@@ -1521,7 +1525,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.5.3:
+create-react-class@^15.5.1, create-react-class@^15.5.3:
   version "15.5.3"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.5.3.tgz#fb0f7cae79339e9a179e194ef466efa3923820fe"
   dependencies:
@@ -4678,7 +4682,7 @@ promise@7.1.1, promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.7, prop-types@~15.5.7:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@~15.5.7:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -4725,6 +4729,10 @@ q@^1.1.2:
 qs@6.4.0, qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
+
+query-string@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-1.0.1.tgz#63ac953352499ad670a9681a75680f6bf3dd1faf"
 
 query-string@^4.1.0:
   version "4.3.4"
@@ -4814,6 +4822,32 @@ react-error-overlay@^1.0.3:
     react-dev-utils "^1.0.3"
     settle-promise "1.0.0"
     source-map "0.5.6"
+
+react-metismenu-router-link@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-metismenu-router-link/-/react-metismenu-router-link-1.0.2.tgz#d1f473f0d0d9d26fded71483f88111a46e6088c3"
+  dependencies:
+    classnames "^2.2.5"
+
+react-metismenu@^1.3.0-alpha.3:
+  version "1.3.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/react-metismenu/-/react-metismenu-1.3.0-alpha.3.tgz#114b4481a6addf45180c6e14eb9642bdd703cce4"
+  dependencies:
+    classnames "^2.2.5"
+    react-redux "^4.4.7"
+    redux "^3.6.0"
+    simple-ajax "^2.6.0"
+
+react-redux@^4.4.7:
+  version "4.4.8"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-4.4.8.tgz#e7bc1dd100e8b64e96ac8212db113239b9e2e08f"
+  dependencies:
+    create-react-class "^15.5.1"
+    hoist-non-react-statics "^1.0.3"
+    invariant "^2.0.0"
+    lodash "^4.2.0"
+    loose-envify "^1.1.0"
+    prop-types "^15.5.4"
 
 react-redux@^5.0.5:
   version "5.0.5"
@@ -5331,6 +5365,12 @@ shellwords@^0.1.0:
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+simple-ajax@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/simple-ajax/-/simple-ajax-2.6.0.tgz#02949d61b5d9aaa93829d7e5c0f0a6327929e144"
+  dependencies:
+    query-string "^1.0.0"
 
 slash@^1.0.0:
   version "1.0.0"

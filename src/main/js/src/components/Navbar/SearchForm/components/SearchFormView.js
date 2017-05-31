@@ -2,11 +2,15 @@ import React from 'react'
 import './SearchFormView.scss'
 
 const SearchFormView = () => (
-    <form className="form-search">
-        <span className="input-icon">
-            <input className="nav-search-input" type="text" placeholder="Search" />
-            <i className="fa fa-search nav-search-icon" aria-hidden="true"></i>
-        </span>
+    <form className="navbar-form navbar-left">
+        <div className="input-group">
+            <input className="form-control" type="text" placeholder="Search" />
+            <div className="input-group-btn">
+                <button className="btn btn-default" type="submit">
+                    <i className="fa fa-search nav-search-icon" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
     </form>
 )
 

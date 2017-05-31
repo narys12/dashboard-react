@@ -1,3 +1,3 @@
-import NotifocationsView from './components/NotificationsView'
+import NotificationsView from './components/NotificationsView'
 
-export default NotifocationsView
+export default NotificationsView

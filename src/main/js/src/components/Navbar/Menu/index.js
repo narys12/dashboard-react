@@ -1,13 +1,3 @@
-import React from 'react'
-import Messsage from './Message'
-import Notifications from './Notifications'
+import MenuView from './components/MenuView'
 
-const Menu = () => (
-    <div>
-        <Messsage />
-        <Notifications />
-    </div>
-    
-)
-
-export default Menu
+export default MenuView

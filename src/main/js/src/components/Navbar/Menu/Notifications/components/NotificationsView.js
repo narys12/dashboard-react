@@ -1,11 +1,11 @@
 import React from 'react'
 import './NotificationsView.css'
 
-const NotifocationsView = () => (
-    <div className="container">
-        <i className="fa fa-bell fa-2x icon-grey" aria-hidden="true"></i>
-        <span className="badge badge-notify">3</span>
-    </div>
+const NotificationsView = () => (
+    <span className="container">
+        <i className="fa fa-bell" aria-hidden="true"></i>
+        <span className="badge badge-notify badge-warning">3</span>
+    </span>
 )
 
-export default NotifocationsView
+export default NotificationsView

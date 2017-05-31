@@ -1,0 +1,13 @@
+.badge-notify{
+   background:red;
+   position:relative;
+   top: -20px;
+   left: -10px;
+   font-size: 6px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.badge-success {
+  background-color: #468847;
+}
