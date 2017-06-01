@@ -1,11 +1,33 @@
 import React from 'react'
 import './SidebarView.css'
+import MetisMenu from 'react-metismenu';
+
+const content=[
+  {
+    icon: 'dashboard',
+    label: 'dashboard',
+    to: 'menu-1',
+  },
+  {
+    icon: 'bell',
+    label: 'Menu 2',
+    to: 'menu-2',
+  },
+  {
+    icon: 'bolt',
+    label: 'Menu 3',
+    content: [
+      {
+        icon: 'bolt',
+        label: 'Sub Menu',
+        to: 'sub-menu',
+      },
+    ],
+  },
+];
 
 const SidebarView = () => (
-    <div id="sidebar-wrapper">
-        <ul className="sidebar-nav">
-        </ul>    
-    </div>
+    <MetisMenu content={content} activeLinkFromLocation /> 
     
 )
 
