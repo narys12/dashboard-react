@@ -5,12 +5,12 @@ import MetisMenu from 'react-metismenu';
 const content=[
   {
     icon: 'dashboard',
-    label: 'dashboard',
+    label: 'Menu 1',
     to: 'menu-1',
   },
   {
-    icon: 'bell',
-    label: 'Menu 2',
+    icon: 'user',
+    label: 'Profile',
     to: 'menu-2',
   },
   {
@@ -27,8 +27,9 @@ const content=[
 ];
 
 const SidebarView = () => (
-    <MetisMenu content={content} activeLinkFromLocation /> 
-    
+    <div className="sidebar-wrapper">
+        <MetisMenu content={content} activeLinkFromLocation /> 
+    </div>
 )
 
 export default SidebarView
