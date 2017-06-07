@@ -21,6 +21,7 @@ $transition: All 0.3s ease-in-out;
     position: absolute;
     background-color: black;
     opacity: $default-opacity;
+    transition: $transition;
     .fa-bars {
         @extend .icon;
     }
@@ -41,6 +42,7 @@ $transition: All 0.3s ease-in-out;
         padding: 10px;
         color: white;
         list-style-type: none;
+        transition: $transition;
         .sidebar-menu-item{
             text-decoration: none;
             cursor: pointer;
@@ -54,6 +56,30 @@ $transition: All 0.3s ease-in-out;
         }
         .fa{
             width: 20px;
+        }
+    }
+}
+.toggle-menu{
+    width: 50px;
+    .fa{
+        font-size: 2em;
+    }
+    .fa-bars{
+        padding: 4px;
+    }
+    .sidebar-header{
+        display: none;
+    }
+    .sidebar-menu{
+        margin-top: 50px;
+        .sidebar-menu-item{
+            text-align: center;
+            span{
+                display: none;
+            }
+            .fa{
+                width: 100%;
+            }
         }
     }
 }

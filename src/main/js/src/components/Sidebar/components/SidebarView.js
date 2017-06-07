@@ -8,7 +8,8 @@ class SidebarView extends React.Component {
         this.closeMenu = this.closeMenu.bind(this);
         this.openMenu = this.openMenu.bind(this);
         this.state = {
-            isClosed: false
+            isClosed: false,
+            sideBarWrapper: "sidebar-wrapper"
         }
     }
 
@@ -23,26 +24,31 @@ class SidebarView extends React.Component {
         }
 
         return (
-            <div className="sidebar-wrapper">
+            <div className={this.state.sideBarWrapper}>
                 {icon}
                 <div className="sidebar-header">
                     Your Site
                 </div>
                 <ul className="sidebar-menu">
-                    <li className="sidebar-menu-item"><i className="fa fa-dashboard"></i>Dashboard</li>
-                    <li className="sidebar-menu-item"><i className="fa fa-user"></i>Profile</li>
+                    <li className="sidebar-menu-item"><i className="fa fa-dashboard"></i><span>Dashboard</span></li>
+                    <li className="sidebar-menu-item"><i className="fa fa-user"></i><span>Profile</span></li>
                 </ul>
             </div>
         );
     }
 
     openMenu() {
-        this.setState({isClosed: false})
+        this.setState((prevState) => ({
+            isClosed: false,
+            sideBarWrapper: prevState.sideBarWrapper.replace(" toggle-menu", "")
+        }))
     }
 
     closeMenu() {
-        this.setState({isClosed: true})
-
+        this.setState((prevState) => ({
+            isClosed: true, 
+            sideBarWrapper: prevState.sideBarWrapper + " toggle-menu"
+        }))
     }
 }
 
