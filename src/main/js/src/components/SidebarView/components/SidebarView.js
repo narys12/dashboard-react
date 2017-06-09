@@ -8,14 +8,12 @@ class SidebarView extends React.Component {
         this.closeMenu = this.closeMenu.bind(this);
         this.openMenu = this.openMenu.bind(this);
         this.state = {
-            isClosed: false,
             sideBarWrapper: "sidebar-wrapper"
         }
     }
 
     render() {
-
-        const isClosed = this.state.isClosed;
+        const isClosed = this.props.visibility.value;
         let icon = null;
         if (isClosed) {
             icon = <i className="fa fa-bars fa-lg" onClick={this.openMenu}></i>
