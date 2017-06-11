@@ -1,28 +1,24 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './SidebarView.scss'
 
 class SidebarView extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.closeMenu = this.closeMenu.bind(this);
-        this.openMenu = this.openMenu.bind(this);
-        this.state = {
-            sideBarWrapper: "sidebar-wrapper"
-        }
-    }
-
     render() {
-        const isClosed = this.props.visibility.value;
+        const isOpen = this.props.visibility.value
+        const openSidebar = () => this.props.changeVisibility(true)
+        const closeSidebar = () => this.props.changeVisibility(false)
+        let sideBarWrapper = "sidebar-wrapper"
         let icon = null;
-        if (isClosed) {
-            icon = <i className="fa fa-bars fa-lg" onClick={this.openMenu}></i>
+        if (!isOpen) {
+            sideBarWrapper = sideBarWrapper + " toggle-menu"
+            icon = <i className="fa fa-bars fa-lg" onClick={openSidebar}></i>
         } else {
-            icon = <i className="fa fa-close fa-lg" onClick={this.closeMenu}></i>
+            sideBarWrapper = sideBarWrapper.replace(" toggle-menu", "")
+            icon = <i className="fa fa-close fa-lg" onClick={closeSidebar}></i>
         }
 
         return (
-            <div className={this.state.sideBarWrapper}>
+            <div className={sideBarWrapper}>
                 {icon}
                 <div className="sidebar-header">
                     Your Site
@@ -33,20 +29,6 @@ class SidebarView extends React.Component {
                 </ul>
             </div>
         );
-    }
-
-    openMenu() {
-        this.setState((prevState) => ({
-            isClosed: false,
-            sideBarWrapper: prevState.sideBarWrapper.replace(" toggle-menu", "")
-        }))
-    }
-
-    closeMenu() {
-        this.setState((prevState) => ({
-            isClosed: true, 
-            sideBarWrapper: prevState.sideBarWrapper + " toggle-menu"
-        }))
     }
 }
 

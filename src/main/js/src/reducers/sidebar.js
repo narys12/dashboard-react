@@ -1,18 +1,18 @@
+import {OPEN_SIDEBAR, CLOSE_SIDEBAR, CHANGE_VISIBILITY} from '../actions/sidebarActions'
+
 const initialState = {
-    visibility: true
+    value: true
 }
 
-export function sidebarVisibility(state = {}, action) {
-    if (typeof state === 'undefined') {
-        return initialState
-    }
-
+export function sidebarVisibility(state = {}, action){
     switch (action.type) {
-        case 'SET_VISIBILITY' : 
-            return Object.assign({}, state, {
-                visibility: action.value
-            })
-        default: 
-            return state
+        case CHANGE_VISIBILITY:
+            return Object.assign(
+                {},
+                state,
+                {value: action.payload}
+            )
+        default:
+            return initialState
     }
 }

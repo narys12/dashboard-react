@@ -1,6 +1,6 @@
-import React from 'react'
 import SidebarView from '../components/SidebarView'
 import { connect } from 'react-redux';
+import {changeVisibility} from '../actions/sidebarActions'
 
 function mapStateToProps(state) {
     return {
@@ -11,7 +11,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         changeVisibility: (bool) => {
-            //return changeVisibility(bool)
+            dispatch(changeVisibility(bool))
         }
     }
 }
