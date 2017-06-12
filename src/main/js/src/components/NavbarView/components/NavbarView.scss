@@ -1,0 +1,15 @@
+$default-opacity: 0.7;
+$transition: All 0.3s ease-in-out;
+
+.navbar-menu {
+    height: 50px;
+    background-color: #bac6d8;
+    margin-left: 250px;
+    transition: $transition;
+    display: flex;
+}
+
+.large-menu {
+    margin-left: 50px;
+    transition: $transition;
+}

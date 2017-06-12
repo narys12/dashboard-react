@@ -1,0 +1,30 @@
+.menu-lists{
+  display: flex;
+  justify-content: flex-end;
+  width: 100px;
+  padding-right: 25px;
+  height: 50px;
+  li {
+    list-style-type: none;
+    margin: 15px;
+    opacity: 0.8;
+    .fa{
+      color: white;
+    }
+    &:hover{
+      opacity: 1;
+      color: #f2f07b;
+    }
+    .badge-notify{
+      background-color: green;
+      color: white;
+      border-radius: 15px;
+      position:relative;
+      top: -27px;
+      left: 7px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+}
