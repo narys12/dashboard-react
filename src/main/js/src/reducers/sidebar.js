@@ -1,4 +1,4 @@
-import {OPEN_SIDEBAR, CLOSE_SIDEBAR, CHANGE_VISIBILITY} from '../actions/sidebarActions'
+import {CHANGE_VISIBILITY} from '../actions/sidebarActions'
 
 const initialState = {
     value: true
