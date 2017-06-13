@@ -23,6 +23,7 @@ $transition: All 0.3s ease-in-out;
     background-color: #2f3742;
     opacity: 1;
     transition: $transition;
+    z-index: 2;
     .fa-bars {
         @extend .icon;
     }

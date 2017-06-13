@@ -1,5 +1,5 @@
 import React from 'react'
-import Menu from '../Menu'
+import MenuView from '../MenuView'
 import SearchView from '../SearchView'
 
 import './NavbarView.scss'
@@ -9,7 +9,7 @@ class NavbarView extends React.Component {
         return (
             <nav className={this.getMenuclass()}>
                 <SearchView />
-                <Menu />
+                <MenuView />
             </nav>
         )
     }
