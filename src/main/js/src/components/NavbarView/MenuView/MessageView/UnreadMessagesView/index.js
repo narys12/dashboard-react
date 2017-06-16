@@ -3,10 +3,16 @@ import React from 'react'
 class UnreadMessagesView extends React.Component {
     render() {
         return (
-            <li className="sub-menu-item">
-                <span className="user-name">Naris</span>
-                <p className="message">Hello World</p>
-            </li>
+            <ul className="sub-menus">
+                <li className="sub-menu-item">
+                    <h3 className="user-name">Naris</h3>
+                    <q className="message">Hello World</q>
+                </li>
+                <li className="sub-menu-item">
+                    <h3 className="user-name">Ol Kaf</h3>
+                    <q className="message">Blabla tsisy thème</q>
+                </li>
+            </ul>
         )
     }
 }

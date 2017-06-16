@@ -1,10 +1,10 @@
 import React from 'react'
 
 const NotificationsView = () => (
-    <a href="#">
+    <li className="main-menu-item">
         <i className="fa fa-bell"></i>
         <div className="badge-notify">3</div>
-    </a>
+    </li>
 )
 
 export default NotificationsView

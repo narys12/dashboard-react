@@ -1,18 +1,15 @@
 import React from 'react'
 import UnreadMessagesView from './UnreadMessagesView'
-import './style.scss'
 
 class MessageView extends React.Component {
 
     render() {
         return (
-            <a href="#">
+            <li className="main-menu-item">
                 <i className="fa fa-envelope"></i>
-                <div className="badge-notify">1</div>
-                <ul className="sub-menus">
-                    <UnreadMessagesView />
-                </ul>
-            </a>
+                <div className="badge-notify">2</div>
+                <UnreadMessagesView />
+            </li>
         )
     }
 }

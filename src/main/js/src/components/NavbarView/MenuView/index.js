@@ -6,8 +6,8 @@ import './style.scss'
 
 const MenuView = () => (
     <ul className="menu-lists">
-        <li><MessageView/></li>
-        <li><NotificationsView/></li>
+        <MessageView/>
+        <NotificationsView/>
     </ul>
 )
 
