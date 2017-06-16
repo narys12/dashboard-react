@@ -1,12 +1,12 @@
-import {CHANGE_SIDEBAR_VISIBILITY} from '../actions/sidebarActions'
+import {CHANGE_SUBMENU_VISIBILITY} from '../actions/navbarActions'
 
 const initialState = {
-    value: true
+    value: false
 }
 
-export function sidebarVisibility(state = {}, action){
+export function subMenuVisibility(state = {}, action){
     switch (action.type) {
-        case CHANGE_SIDEBAR_VISIBILITY:
+        case CHANGE_SUBMENU_VISIBILITY:
             return Object.assign(
                 {},
                 state,

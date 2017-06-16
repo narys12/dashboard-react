@@ -1,17 +1,18 @@
-import SidebarView from '../components/SidebarView'
 import { connect } from 'react-redux';
-import {changeVisibility} from '../actions/sidebarActions'
+
+import SidebarView from '../components/SidebarView'
+import {changeSidebarVisibility} from '../actions/sidebarActions'
 
 function mapStateToProps(state) {
     return {
-        visibility: state.sidebarVisibility
+        sidebarVisibility: state.sidebarVisibility
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        changeVisibility: (bool) => {
-            dispatch(changeVisibility(bool))
+        changeSidebarVisibility: (bool) => {
+            dispatch(changeSidebarVisibility(bool))
         }
     }
 }

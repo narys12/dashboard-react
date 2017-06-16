@@ -4,9 +4,9 @@ import './style.scss'
 class SidebarView extends React.Component {
 
     render() {
-        const isOpen = this.props.visibility.value
-        const openSidebar = () => this.props.changeVisibility(true)
-        const closeSidebar = () => this.props.changeVisibility(false)
+        const isOpen = this.props.sidebarVisibility.value
+        const openSidebar = () => this.props.changeSidebarVisibility(true)
+        const closeSidebar = () => this.props.changeSidebarVisibility(false)
         let sideBarWrapper = "sidebar-wrapper"
         let icon = null;
         if (!isOpen) {

@@ -1,8 +1,8 @@
-export const CHANGE_VISIBILITY = 'CHANGE_VISIBILITY'
+export const CHANGE_SIDEBAR_VISIBILITY = 'CHANGE_SIDEBAR_VISIBILITY'
 
-export function changeVisibility(bool) {
+export function changeSidebarVisibility(bool) {
     return {
-        type: CHANGE_VISIBILITY,
+        type: CHANGE_SIDEBAR_VISIBILITY,
         payload: bool
     }
 }
