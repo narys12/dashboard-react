@@ -1,23 +1,13 @@
 import { connect } from 'react-redux';
 
-import SidebarView from '../../components/SidebarView'
-import {changeNavbarVisibility} from '../../actions/navbarActions'
+import NavbarView from '../../components/NavbarView'
 
 function mapStateToProps(state) {
     return {
-        sidebarVisibility: state.sidebarVisibility,
-        subMenuVisibility: state.subMenuVisibility
+        sidebarVisibility: state.sidebarVisibility
     }
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        changeSubMenuVisibility: (bool) => {
-            dispatch(changeNavbarVisibility(bool))
-        }
-    }
-}
-
-const NavbarContainer = connect(mapStateToProps, mapDispatchToProps)(SidebarView)
+const NavbarContainer = connect(mapStateToProps)(NavbarView)
 
 export default NavbarContainer;

@@ -2,8 +2,9 @@ import React from 'react'
 
 class UnreadMessagesView extends React.Component {
     render() {
+
         return (
-            <ul className="sub-menus">
+            <ul className={this.getListClass()}>
                 <li className="sub-menu-item">
                     <h3 className="user-name">Naris</h3>
                     <q className="message">Hello World</q>
@@ -14,6 +15,15 @@ class UnreadMessagesView extends React.Component {
                 </li>
             </ul>
         )
+    }
+
+    getListClass(){
+        let isMainMenuActive = this.props.isActive
+        let listClass = "sub-menus"
+        if (isMainMenuActive)
+            listClass += " show"
+        else listClass = listClass.replace(" show", "")
+        return listClass
     }
 }
 

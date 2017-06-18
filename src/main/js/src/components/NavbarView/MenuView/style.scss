@@ -7,12 +7,14 @@
   list-style: none;
   .main-menu-item {
     position: relative;
-    opacity: 0.7;
     color: #85abea;
     padding-right: 20px;
     padding-top: 15px;
-    &:hover{
-      opacity: 1;
+    .fa{
+      opacity: 0.7;
+      &:hover{
+        opacity: 1;
+      }
     }
     .sub-menus{
       list-style: none;
@@ -25,16 +27,23 @@
       background-color: #eff2f7;
       border-radius: 5px;
       box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-      
+      z-index: 1;
       .sub-menu-item{
         padding: 10px;
+        opacity: 0.7;
+        &:hover{
+          background-color: #2f3742;
+          color: white;
+          font-weight: 800;
+          font-size: 2em;
+        }
       }
     }
     .show{
       display: block;
     }
     .badge-notify{
-      background-color: green;
+      background-color: #e5350d;
       color: white;
       border-radius: 15px;
       position:relative;
