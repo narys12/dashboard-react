@@ -22,7 +22,7 @@ class MessageView extends React.Component {
 
     showSubMenu() {
         this.setState((prevState) => ({
-            isActive: !prevState.isActive
+            isMainMenuActive: !prevState.isActive
         }))
     }
 }
