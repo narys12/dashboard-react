@@ -1,4 +1,5 @@
 import React from 'react'
+import onClickOutside from 'react-onclickoutside'
 import UnreadMessagesView from './UnreadMessagesView'
 
 class MessageView extends React.Component {
@@ -6,7 +7,7 @@ class MessageView extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            isActive: false
+            isMainMenuActive: false
         }
     }
 
@@ -15,16 +16,22 @@ class MessageView extends React.Component {
             <li className="main-menu-item" onClick={this.showSubMenu.bind(this)} >
                 <i className="fa fa-envelope"></i>
                 <div className="badge-notify">2</div>
-                <UnreadMessagesView isActive={this.state.isActive}/>
+                <UnreadMessagesView isMainMenuActive={this.state.isMainMenuActive}/>
             </li>
         )
     }
 
+    handleClickOutside = evt => {
+        this.setState((prevState) => ({
+            isMainMenuActive: false
+        }))
+    }
+
     showSubMenu() {
         this.setState((prevState) => ({
-            isMainMenuActive: !prevState.isActive
+            isMainMenuActive: !prevState.isMainMenuActive
         }))
     }
 }
 
-export default MessageView
+export default onClickOutside(MessageView)
