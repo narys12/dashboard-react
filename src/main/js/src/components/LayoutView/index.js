@@ -6,11 +6,18 @@ import 'font-awesome/css/font-awesome.css'
 
 import './style.scss'
 
-const LayoutView = () => (
-  <div>
-    <SidebarContainer />
-    <NavbarContainer />
-  </div>
-)
+class LayoutView extends React.Component {
+  render() {
+    return (
+      <div>
+        <SidebarContainer />
+        <NavbarContainer />
+        <section>
+          {this.props.children}
+        </section>
+      </div>
+    )
+  }
+} 
 
 export default LayoutView;

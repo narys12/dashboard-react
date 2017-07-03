@@ -6,23 +6,16 @@ import './style.scss'
 
 class NavbarView extends React.Component {
     render() {
+        const isSidebarVisible = this.props.sidebarVisibility.value
         return (
-            <nav className={this.getMenuclass()}>
-                <SearchView />
-                <MenuView />
+            <nav
+                className={isSidebarVisible
+                ? "navbar-menu"
+                : "navbar-menu large-menu"}>
+                <SearchView/>
+                <MenuView/>
             </nav>
         )
-    }
-
-    getMenuclass() {
-        const isSidebarVisible = this.props.sidebarVisibility.value
-        let menuClass = "navbar-menu"
-        if (!isSidebarVisible) {
-            menuClass += " large-menu"
-        } else {
-            menuClass = menuClass.replace(" large-menu", "")
-        }
-        return menuClass
     }
 }
 

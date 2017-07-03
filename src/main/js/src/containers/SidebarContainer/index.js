@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
-import SidebarView from '../components/SidebarView'
-import {changeSidebarVisibility} from '../actions/sidebarActions'
+import SidebarView from '../../components/SidebarView'
+import {changeSidebarVisibility} from '../../actions/sidebarActions'
 
 function mapStateToProps(state) {
     return {
@@ -17,4 +17,5 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SidebarView)
+const SidebarContainer = connect(mapStateToProps, mapDispatchToProps)(SidebarView)
+ export default SidebarContainer

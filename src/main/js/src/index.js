@@ -2,14 +2,14 @@ import React from 'react';
 import { createStore } from 'redux'
 import { render } from 'react-dom';
 import {Provider} from 'react-redux'
-import LayoutView from './components/LayoutView';
+import AppView from './components/AppView';
 import reducer from './reducers'
 
 const store = createStore(reducer)
 
 render(
     <Provider store={store}>
-        <LayoutView />
+        <AppView />
     </Provider>,
     document.getElementById('root')
 )
