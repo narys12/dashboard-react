@@ -1,0 +1,12 @@
+$transition: All 0.3s ease-in-out;
+
+.content{
+    margin-left: 250px;
+    padding: 15px;
+    transition: $transition;
+}
+
+.full {
+    margin-left: 50px;
+    transition: $transition;
+}

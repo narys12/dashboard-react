@@ -1,6 +1,7 @@
 import React from 'react';
 import SidebarContainer from '../../containers/SidebarContainer'
 import NavbarContainer from '../../containers/NavbarContainer'
+import ContentContainer from '../../containers/ContentContainer'
 
 import 'font-awesome/css/font-awesome.css'
 
@@ -12,9 +13,7 @@ class LayoutView extends React.Component {
       <div>
         <SidebarContainer />
         <NavbarContainer />
-        <section>
-          {this.props.children}
-        </section>
+        <ContentContainer children={this.props.children}/>
       </div>
     )
   }

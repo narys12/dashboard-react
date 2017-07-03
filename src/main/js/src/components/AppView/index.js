@@ -1,6 +1,6 @@
 import React from 'react';
 import LayoutView from '../LayoutView'
-import DashboardView from '../contents/DashboardView'
+import DashboardView from '../ContentView/DashboardView'
 import {Router, Route, browserHistory, IndexRoute} from 'react-router'
 
 const AppView = () => (
