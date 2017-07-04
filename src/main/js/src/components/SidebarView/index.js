@@ -1,6 +1,6 @@
 import React from 'react'
-
-import CatalogView from './CatalogView'
+import onClickOutside from 'react-onclickoutside'
+import {Link} from 'react-router'
 
 import './style.scss'
 
@@ -38,21 +38,22 @@ class SidebarView extends React.Component {
                 </div>
                 <ul className="sidebar-menu">
                     <li className="sidebar-menu-item">
-                        
-                            <i className="fa fa-dashboard"></i><span>Dashboard</span>
+                        <Link to="dashboard"><i className="fa fa-home"></i><span>Dashboard</span></Link>
                     </li>
-                    <li
-                        className="sidebar-menu-item"
-                        onClick={() => this.setState((prevState) => ({
-                        isCatalogClicked: !prevState.isCatalogClicked
-                    }))}>
-                        <i className="fa fa-user"></i><span>Catalog</span>
-                        <CatalogView isParentClicked={this.state.isCatalogClicked}/>
+                    <li className="sidebar-menu-item">
+                        <Link to="products"><i className="fa fa-user"></i><span>Products</span></Link>
+                    </li>
+                    <li className="sidebar-menu-item">
+                        <Link to="offers"><i className="fa fa-user"></i><span>Offers</span></Link>
                     </li>
                 </ul>
             </div>
         );
     }
+
+    handleClickOutside = evt => {
+        this.closeSidebar()
+    }
 }
 
-export default SidebarView
+export default onClickOutside(SidebarView)

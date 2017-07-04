@@ -4,12 +4,8 @@ $transition: All 0.3s ease-in-out;
 .navbar-menu {
     height: 50px;
     background-color: #eff2f7;
-    margin-left: 250px;
+    margin-left: 50px;
+    padding-left: 20px;
     transition: $transition;
     display: flex;
-}
-
-.large-menu {
-    margin-left: 50px;
-    transition: $transition;
 }

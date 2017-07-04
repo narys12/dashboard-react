@@ -1,7 +1,7 @@
 import {CHANGE_SIDEBAR_VISIBILITY} from '../actions/sidebarActions'
 
 const initialState = {
-    value: true
+    value: false
 }
 
 export function sidebarVisibility(state = {}, action){
