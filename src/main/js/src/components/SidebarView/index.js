@@ -37,15 +37,21 @@ class SidebarView extends React.Component {
                     Your Site
                 </div>
                 <ul className="sidebar-menu">
-                    <li className="sidebar-menu-item">
-                        <Link to="dashboard"><i className="fa fa-home"></i><span>Dashboard</span></Link>
-                    </li>
-                    <li className="sidebar-menu-item">
-                        <Link to="products"><i className="fa fa-user"></i><span>Products</span></Link>
-                    </li>
-                    <li className="sidebar-menu-item">
-                        <Link to="offers"><i className="fa fa-user"></i><span>Offers</span></Link>
-                    </li>
+                    <Link to="dashboard" onClick={this.closeSidebar}>
+                        <li className="sidebar-menu-item">
+                            <i className="fa fa-home"></i><span>Dashboard</span>
+                        </li>
+                    </Link>
+                    <Link to="products" onClick={this.closeSidebar}>
+                        <li className="sidebar-menu-item">
+                            <i className="fa fa-user"></i><span>Products</span>
+                        </li>
+                    </Link>
+                    <Link to="offers" onClick={this.closeSidebar}>
+                        <li className="sidebar-menu-item">
+                            <i className="fa fa-user"></i><span>Offers</span>
+                        </li>
+                    </Link>
                 </ul>
             </div>
         );
